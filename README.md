@@ -17,4 +17,4 @@ Portafolio profesional enfocado en desarrollo backend con Java.
 - Mantenibilidad
 
 ## Autor
-Tu Nombre
+Carlos Arenas
