@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: system-ui, sans-serif;
   background: #f1f5f9;
@@ -5,12 +11,14 @@ body {
   line-height: 1.7;
 }
 
+/* NAV */
 nav {
   background: #020617;
   color: white;
-  padding: 20px;
+  padding: 20px 30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
@@ -22,48 +30,105 @@ nav ul {
 nav a {
   color: white;
   text-decoration: none;
+  font-size: 0.95rem;
 }
 
+nav a:hover {
+  opacity: 0.8;
+}
+
+/* HERO */
 .hero {
   background: #020617;
   color: white;
-  padding: 90px 20px;
+  padding: 100px 20px;
   text-align: center;
 }
 
+.hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  opacity: 0.9;
+}
+
+/* SECTIONS */
 section {
   max-width: 900px;
   margin: auto;
-  padding: 60px 20px;
+  padding: 70px 20px;
 }
 
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* SKILLS */
 .skills-grid span {
   display: inline-block;
   background: white;
-  padding: 8px 14px;
+  padding: 10px 16px;
   border-radius: 20px;
   margin: 6px;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
+/* PROJECTS */
 .project {
   background: white;
-  padding: 25px;
-  border-radius: 10px;
-  margin-top: 25px;
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
-.project ul {
-  margin-left: 20px;
+.project h3 {
+  margin-bottom: 10px;
 }
 
-.tech {
-  font-size: 14px;
-  color: #475569;
+.project-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
 }
 
+.project-links a {
+  background: #020617;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.project-links a:hover {
+  opacity: 0.85;
+}
+
+/* FOOTER */
 footer {
   background: #020617;
   color: white;
   text-align: center;
-  padding: 30px;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
